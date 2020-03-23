@@ -2,6 +2,8 @@
   <img src="https://raw.githubusercontent.com/timmot/activity-pub-tutorial/master/title.png" alt="preview"/>
 </p>
 
+# ActivityPub Tutorial
+
 ## Requirements
 * You need a domain name
 * You need an HTTPS certificate for this domain name
