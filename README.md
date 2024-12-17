@@ -148,7 +148,7 @@ def webfinger():
     })
 
     # Servers may discard the result if you do not set the appropriate content type
-    response.headers['Content'Type'] = 'application/jrd+json'
+    response.headers['Content-Type'] = 'application/jrd+json'
     
     return response
 ```
