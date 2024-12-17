@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/timmot/activity-pub-tutorial/master/title.png" alt="preview"/>
+  <img style="max-height: 250px;" src="https://raw.githubusercontent.com/timmot/activity-pub-tutorial/master/title.png" alt="ActivityPub"/>
 </p>
 
 # ActivityPub Tutorial
@@ -10,7 +10,15 @@
 * Python3
 * Python3 packages: flask, cryptography, requests
 
-## Method
+## Short method
+1. [Read the ActivityPub overview](#1-read-the-activitypub-overview)
+2. [Create an endpoint for yourself](#2-create-an-endpoint-for-yourself)
+3. [Extend this endpoint for real servers](#3-extend-this-endpoint-for-real-servers)
+4. [Create a Webfinger endpoint for yourself](#4-create-a-webfinger-endpoint-for-yourself)
+5. [Create an inbox endpoint for yourself](#5-create-an-inbox-endpoint-for-yourself)
+6. [Follow a user from an instance to start receiving activities on your instance](#6-follow-a-user-from-an-instance-to-start-receiving-activities-on-your-instance)
+
+## Long method
 We'll run with some assumptions. Your domain name is `example.com`, your user name will be `zampano`.
 
 ### 1. Read the ActivityPub overview
@@ -111,7 +119,7 @@ def user(username):
 ```
 
 
-### 4. Create a webfinger endpoint for this user
+### 4. Create a Webfinger endpoint for yourself
 
 "Web finger is used to discover information about people or other entities on the Internet that are identified by a URI."
 Some ActivityPub servers, like Mastodon, will use Webfinger to find the location of the Actor record we've been creating. 
@@ -145,7 +153,7 @@ def webfinger():
     return response
 ```
 
-### 5. Create the inbox endpoint for your user
+### 5. Create an inbox endpoint for yourself 
 
 We've defined an inbox and outbox property in our Person record.
 ```
